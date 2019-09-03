@@ -1,4 +1,3 @@
-
 //Ejercicio: calcular la mediana de un arreglo de numeros enteros.
 
 #include<iostream>
