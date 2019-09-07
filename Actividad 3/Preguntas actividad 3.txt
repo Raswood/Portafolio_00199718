@@ -1,0 +1,54 @@
+
+¿Son válidas las siguientes expresiones?
+
+matrix[0][0] = *(*(matrix))
+Aquí matrix contiene cero elementos con un arreglo de cero. 
+Aquí nos referimos a donde nuestra matriz daría iniciocon su declaraion. Siempre se comienza desde cero.
+
+
+matrix[ i ][ j ] = *((*(matrix)) + (i * COLS + j))
+Con nuestra primera matrix definida. Se realiza un arreglo de arreglos agregando los valores de los sub índices i y j. Se 
+utiliza un parentesis junto a un asterisco apuntando a "matrix" para luego de ser ejecutado apunte todo el valor de la suma
+al puntero del valor original.
+
+matrix[ i ][ j ] = *(*(matrix + i) + j) 
+Este es casi lo mismo del caso anterior. En este matrix suma junto con el valor que apunta a "i" y luego moverse de posicion 
+por el "j" quienes luego como resultado seran almacenados dentro de la declaracion del valor original.
+
+matrix[ i ][ j ] = *(matrix[i] + j)
+Lo que sucede es que, al apuntar hacia matrix este ingresa al sub índice del contedio de “i” que contendra
+sus respectivos valores declarados en esta funcion sumandole la posicion de j.
+
+
+matrix[ i ][ j ] = (*(matrix + i))[j]
+Se desarrolla un pequeño llamado de puntero agregando la posición de "i" y para finalizar agrega el arreglo de "j" apuntando 
+al valor de origen donde se guardará. 
+
+Nota: al declarar el arreglo y dentro de los sub indices que contienen "i" y "j" recorreros las columnas y filas
+=======
+¿Son válidas las siguientes expresiones?
+
+matrix[0][0] = *(*(matrix))
+Aquí matrix contiene cero elementos con un arreglo de cero. 
+Aquí nos referimos a donde nuestra matriz daría iniciocon su declaraion. Siempre se comienza desde cero.
+
+
+matrix[ i ][ j ] = *((*(matrix)) + (i * COLS + j))
+Con nuestra primera matrix definida. Se realiza un arreglo de arreglos agregando los valores de los sub índices i y j. Se 
+utiliza un parentesis junto a un asterisco apuntando a "matrix" para luego de ser ejecutado apunte todo el valor de la suma
+al puntero del valor original.
+
+matrix[ i ][ j ] = *(*(matrix + i) + j) 
+Este es casi lo mismo del caso anterior. En este matrix suma junto con el valor que apunta a "i" y luego moverse de posicion 
+por el "j" quienes luego como resultado seran almacenados dentro de la declaracion del valor original.
+
+matrix[ i ][ j ] = *(matrix[i] + j)
+Lo que sucede es que, al apuntar hacia matrix este ingresa al sub índice del contedio de “i” que contendra
+sus respectivos valores declarados en esta funcion sumandole la posicion de j.
+
+
+matrix[ i ][ j ] = (*(matrix + i))[j]
+Se desarrolla un pequeño llamado de puntero agregando la posición de "i" y para finalizar agrega el arreglo de "j" apuntando 
+al valor de origen donde se guardará. 
+
+Nota: al declarar el arreglo y dentro de los sub indices que contienen "i" y "j" recorreros las columnas y filas declarados en estos dos.
