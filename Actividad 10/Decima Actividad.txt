@@ -1,0 +1,17 @@
+Decima actividad del portafolio
+1.A-B/(C*D$E)
+2.((A+B)*C-(D-E))$(F+G)
+
+1.Desarrollo
+  A-B/(C*$DE) Dentro del parentesis es mas importante el signo de dolar
+  A-B/(*C$DE)
+  A-/B(*C$DE)
+  -A/B(*C$DE)
+  -A/B*C$DE
+
+2.Desarrollo
+  +AB*C-(-DE)$(+FG)
+  -*+ABC-DE $(F+G)
+  -*+ABC-DE $(+FG)
+  $--*+ABCDE+FG
+  
